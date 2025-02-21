@@ -1,0 +1,10 @@
+cop_dataspace:
+    priority: 1
+    search: # Search parameters configuration
+    download:
+        extract:
+        output_dir:
+    auth:
+        credentials:
+            username: thomas.wilson@gov.scot
+            password: 
