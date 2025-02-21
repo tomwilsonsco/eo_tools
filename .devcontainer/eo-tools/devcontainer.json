@@ -1,8 +1,11 @@
 {
   "name": "eo_tools",
   "dockerComposeFile": "../../docker-compose.yml",
-  "service": "eo_tools",
-  "workspaceFolder": "/eo_tools",
+  "service": "eo_tools_service",
+  "workspaceFolder": "/app",
+  "mounts": [
+  "source=/mnt/x/library/tomwilsonsco/eo_tools,target=/app,type=bind"
+  ],
   "forwardPorts": [
     "localhost:8085"
   ],
@@ -23,7 +26,7 @@
         "git.ignoreLimitWarning": true,
         // "python.formatting.provider": "none",
         "[python]": {
-          "editor.defaultFormatter": "ms-python.black-formatter",
+          "editor.defaultFormatter": "ms-vscode.vscode-js-profile-table",
           "editor.formatOnSave": true
         }
       }
